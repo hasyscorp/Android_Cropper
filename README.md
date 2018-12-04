@@ -12,12 +12,12 @@
 If you are building with Gradle, simply add the following line to the `dependencies` section of your `build.gradle` file:
 
 ```
-	implementation 'com.github.hasyscorp:Android_Cropper:1.0.5'
+	implementation 'com.github.hasyscorp:Android_Cropper:1.0.6'
 ```
 
 If you've added com.android.support:appcompat-v7:xx.x.x Please use the following configuration
 
-    implementation('com.github.hasyscorp:Android_Cropper:1.0.5') {
+    implementation('com.github.hasyscorp:Android_Cropper:1.0.6') {
         exclude group: 'com.android.support', module: 'appcompat-v7'
     }
 
