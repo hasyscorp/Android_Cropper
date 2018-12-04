@@ -1,31 +1,32 @@
-# Crop - Image Cropping Library for Android
+# Android Cropper - Image Cropping Library for Android
 
-#### This project is forked from Yalantis/uCrop. Since the modified too much, so did not create a branch from the original project.
+#### This project is forked from xuehuayous/Android-Crop.(Original project is Yalantis/uCrop.)
+#### Since the modified too much, so did not create a branch from the original project.
 
 ## WeChat crop picture demo
 <br/>
-<div align="center"><img src="https://raw.githubusercontent.com/xuehuayous/Android-Crop/master/wechat_demo.gif" /></div>
-
-<img src="https://d13yacurqjgara.cloudfront.net/users/221935/screenshots/2474295/animation.gif" alt="alt text" style="width:200;height:200">
+<div align="center"><img src="https://raw.githubusercontent.com/haayscorp/Android_Cropper/master/wechat_demo.gif" /></div>
 
 ## Using Crop in your application
 
 If you are building with Gradle, simply add the following line to the `dependencies` section of your `build.gradle` file:
 
 ```
-	compile 'com.kevin:crop:1.0.1'
+	implementation 'com.github.hasyscorp:Android_Cropper:1.0.5'
 ```
 
 If you've added com.android.support:appcompat-v7:xx.x.x Please use the following configuration
 
-    compile('com.kevin:crop:1.0.1') {
+    implementation('com.github.hasyscorp:Android_Cropper:1.0.5') {
         exclude group: 'com.android.support', module: 'appcompat-v7'
     }
 
+## Adding Feature(Version History)
+v1.0.5 - Top-height editing now available.
 
 ## License
 
-    Copyright 2016, Kevin.zhou
+    Copyright 2018, HasysCorp
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
