@@ -173,6 +173,7 @@ public class OverlayView extends View {
 
     public void setTopPadding(float top) {
         mTopPadding = top;
+        this.setPadding(0, (int) mTopPadding,0,0);
     }
 
     /**
@@ -209,7 +210,7 @@ public class OverlayView extends View {
         super.onLayout(changed, left, top, right, bottom);
         if (changed) {
             left = getPaddingLeft();
-            top = (int) (getPaddingTop() + mTopPadding);
+            top = getPaddingTop();
             right = getWidth() - getPaddingRight();
             bottom = getHeight() - getPaddingBottom();
             mThisWidth = right - left;
