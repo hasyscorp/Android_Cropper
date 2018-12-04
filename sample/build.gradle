@@ -5,7 +5,7 @@ android {
 
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
-        applicationId "com.kevin.crop.sample"
+        applicationId "com.github.hasys.cropper.sample"
         minSdkVersion 14
         targetSdkVersion 28
         versionCode 1
@@ -21,7 +21,6 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation project(':crop')
 }

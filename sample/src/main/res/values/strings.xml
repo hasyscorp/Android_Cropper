@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">uCrop</string>
+    <string name="app_name">Android Cropper</string>
 
     <string name="label_sample">sample</string>
     <string name="label_aspect_ratio">Aspect ratio</string>
@@ -37,9 +37,9 @@
     <string name="toast_cannot_retrieve_cropped_image">Cannot retrieve cropped image</string>
     <string name="toast_unexpected_error">Unexpected error</string>
 
-    <string name="ucrop_label_original">Original</string>
-    <string name="ucrop_label_edit_photo">Edit Photo</string>
+    <string name="cropper_label_original">Original</string>
+    <string name="cropper_label_edit_photo">Edit Photo</string>
 
-    <string name="ucrop_menu_crop">Crop</string>
+    <string name="cropper_menu_crop">Crop</string>
 
 </resources>

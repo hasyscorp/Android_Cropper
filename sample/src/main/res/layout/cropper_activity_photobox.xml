@@ -1,0 +1,123 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cropper_color_toolbar"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/cropper_label_edit_photo"
+            android:textColor="@color/cropper_color_title"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/cropper_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/wrapper_controls"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/cropper_color_crop_background">
+
+        <ImageView
+            android:id="@+id/image_view_logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/cropper_vector_ic_crop"
+            tools:background="@drawable/cropper_vector_ic_crop"
+            tools:ignore="MissingPrefix"/>
+
+        <com.github.hasys.cropper.view.CropperView
+            android:id="@+id/cropper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/wrapper_controls"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cropper_height_wrapper_controls"
+        android:layout_above="@+id/wrapper_states"
+        android:background="@color/cropper_color_widget_background">
+
+        <include
+            android:id="@+id/layout_aspect_ratio"
+            layout="@layout/cropper_layout_aspect_ratio"/>
+
+        <include
+            android:id="@+id/layout_rotate_wheel"
+            layout="@layout/cropper_layout_rotate_wheel"/>
+
+        <include
+            android:id="@+id/layout_scale_wheel"
+            layout="@layout/cropper_layout_scale_wheel"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cropper_height_divider_shadow"
+        android:layout_above="@+id/wrapper_states"
+        android:background="@drawable/cropper_shadow_upside"/>
+
+    <LinearLayout
+        android:id="@+id/wrapper_states"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cropper_height_wrapper_states"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cropper_color_widget_background"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/state_scale"
+            style="@style/cropper_WrapperIconState">
+
+            <ImageView
+                android:id="@+id/image_view_state_scale"
+                style="@style/cropper_ImageViewWidgetIcon"
+                android:src="@mipmap/cropper_ic_scale"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/state_aspect_ratio"
+            style="@style/cropper_WrapperIconState">
+
+            <ImageView
+                android:id="@+id/image_view_state_aspect_ratio"
+                style="@style/cropper_ImageViewWidgetIcon"
+                android:src="@mipmap/cropper_ic_crop"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/state_rotate"
+            style="@style/cropper_WrapperIconState">
+
+            <ImageView
+                android:id="@+id/image_view_state_rotate"
+                style="@style/cropper_ImageViewWidgetIcon"
+                android:src="@mipmap/cropper_ic_rotate"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

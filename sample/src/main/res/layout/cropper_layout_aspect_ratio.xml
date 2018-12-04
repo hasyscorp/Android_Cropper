@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:ignore="HardcodedText"
+    tools:showIn="@layout/cropper_activity_photobox"
+    tools:visibility="gone">
+
+    <FrameLayout
+        android:id="@+id/crop_aspect_ratio_1_1"
+        style="@style/cropper_WrapperIconState">
+
+        <com.github.hasys.cropper.sample.widget.AspectRatioTextView
+            style="@style/cropper_TextViewCropAspectRatio"
+            app:cropper_artv_ratio_x="1"
+            app:cropper_artv_ratio_y="1" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/crop_aspect_ratio_3_4"
+        style="@style/cropper_WrapperIconState">
+
+        <com.github.hasys.cropper.sample.widget.AspectRatioTextView
+            style="@style/cropper_TextViewCropAspectRatio"
+            app:cropper_artv_ratio_x="4"
+            app:cropper_artv_ratio_y="3" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/crop_aspect_ratio_original"
+        style="@style/cropper_WrapperIconState">
+
+        <com.github.hasys.cropper.sample.widget.AspectRatioTextView
+            style="@style/cropper_TextViewCropAspectRatio"
+            android:textAllCaps="true"
+            app:cropper_artv_ratio_title="@string/cropper_label_original" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/crop_aspect_ratio_3_2"
+        style="@style/cropper_WrapperIconState">
+
+        <com.github.hasys.cropper.sample.widget.AspectRatioTextView
+            style="@style/cropper_TextViewCropAspectRatio"
+            app:cropper_artv_ratio_x="3"
+            app:cropper_artv_ratio_y="2" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/crop_aspect_ratio_16_9"
+        style="@style/cropper_WrapperIconState">
+
+        <com.github.hasys.cropper.sample.widget.AspectRatioTextView
+            style="@style/cropper_TextViewCropAspectRatio"
+            app:cropper_artv_ratio_x="16"
+            app:cropper_artv_ratio_y="9" />
+
+    </FrameLayout>
+
+</LinearLayout>

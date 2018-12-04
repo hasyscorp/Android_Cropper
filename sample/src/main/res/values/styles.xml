@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="ucrop_ImageViewWidgetIcon">
+    <style name="cropper_ImageViewWidgetIcon">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
@@ -9,7 +9,7 @@
         <item name="android:duplicateParentState">true</item>
     </style>
 
-    <style name="ucrop_WrapperIconState">
+    <style name="cropper_WrapperIconState">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
@@ -17,28 +17,28 @@
         <item name="android:clickable">true</item>
     </style>
 
-    <style name="ucrop_WrapperRotateButton">
-        <item name="android:layout_width">@dimen/ucrop_size_wrapper_rotate_button</item>
-        <item name="android:layout_height">@dimen/ucrop_size_wrapper_rotate_button</item>
+    <style name="cropper_WrapperRotateButton">
+        <item name="android:layout_width">@dimen/cropper_size_wrapper_rotate_button</item>
+        <item name="android:layout_height">@dimen/cropper_size_wrapper_rotate_button</item>
         <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
         <item name="android:clickable">true</item>
     </style>
 
-    <style name="ucrop_TextViewCropAspectRatio">
+    <style name="cropper_TextViewCropAspectRatio">
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">@dimen/ucrop_height_crop_aspect_ratio_text</item>
+        <item name="android:layout_height">@dimen/cropper_height_crop_aspect_ratio_text</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:duplicateParentState">true</item>
-        <item name="android:textColor">@color/ucrop_scale_text_view_selector</item>
+        <item name="android:textColor">@color/cropper_scale_text_view_selector</item>
     </style>
 
-    <style name="ucrop_TextViewWidgetText">
+    <style name="cropper_TextViewWidgetText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginTop">@dimen/ucrop_margit_top_widget_text</item>
-        <item name="android:textColor">@color/ucrop_color_widget_text</item>
-        <item name="android:textSize">@dimen/ucrop_text_size_widget_text</item>
+        <item name="android:layout_marginTop">@dimen/cropper_margit_top_widget_text</item>
+        <item name="android:textColor">@color/cropper_color_widget_text</item>
+        <item name="android:textSize">@dimen/cropper_text_size_widget_text</item>
     </style>
 
 </resources>

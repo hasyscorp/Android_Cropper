@@ -29,15 +29,15 @@
     </android.support.v7.widget.Toolbar>
 
     <FrameLayout
-        android:id="@+id/ucrop_frame"
+        android:id="@+id/cropper_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/wrapper_controls"
         android:layout_below="@+id/toolbar"
-        android:background="@color/ucrop_color_crop_background">
+        android:background="@color/cropper_color_crop_background">
 
-        <com.kevin.crop.view.UCropView
-            android:id="@+id/weixin_act_ucrop"
+        <com.github.hasys.cropper.view.CropperView
+            android:id="@+id/weixin_act_cropper"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="invisible" />
