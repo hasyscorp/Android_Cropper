@@ -5,7 +5,7 @@
 
 ## WeChat crop picture demo
 <br/>
-<div align="center"><img src="https://raw.githubusercontent.com/haayscorp/Android_Cropper/master/wechat_demo.gif" /></div>
+<div align="center"><img src="Android_Cropper/wechat_demo.gif" /></div>
 
 ## Using Crop in your application
 
