@@ -39,3 +39,18 @@ v1.0.5 - Top-height editing now available.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+## OSS Notice || RxPhoto
+```
+This opensource library is Copyright(c) 2018 hasys corp. All rights reserved.
+
+The following  sets forth attribution notices for third party software that may be contained in this opensource library.
+If you have any questions or concerns, please contact us at purple@kakaocorp.com
+
+=================================================================================
+
+Android-Crop
+https://github.com/xuehuayous/Android-Crop
+Copyright 2016 Kevin.zhou
+Apache License 2.0
+```
