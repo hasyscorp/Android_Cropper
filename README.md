@@ -40,7 +40,7 @@ v1.0.5 - Top-height editing now available.
     See the License for the specific language governing permissions and
     limitations under the License.
 
-## OSS Notice || RxPhoto
+## OSS Notice || Android_Cropper
 ```
 This opensource library is Copyright(c) 2018 hasys corp. All rights reserved.
 
