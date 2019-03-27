@@ -238,9 +238,17 @@ public class OverlayView extends View {
     protected void drawDimmedLayer(@NonNull Canvas canvas) {
         canvas.save();
         if (mOvalDimmedLayer) {
-            canvas.clipPath(mCircularPath, Region.Op.DIFFERENCE);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                canvas.clipOutPath(mCircularPath);
+            } else {
+                canvas.clipPath(mCircularPath, Region.Op.DIFFERENCE);
+            }
         } else {
-            canvas.clipRect(mCropViewRect, Region.Op.DIFFERENCE);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                canvas.clipOutRect(mCropViewRect);
+            } else {
+                canvas.clipRect(mCropViewRect, Region.Op.DIFFERENCE);
+            }
         }
         canvas.drawColor(mDimmedColor);
         canvas.restore();
